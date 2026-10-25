@@ -56,7 +56,8 @@ namespace MediaTracker.Data
         // Method to display media item details
         public override string ToString()
         {
-            return $"{Id}: {Title} ({ReleaseYear}) - {Type} | {Genre} - Status: {Status} | Rating: {UserRating}/10 ({DateAdded.ToShortDateString()})";
+            string genreDisplay = string.IsNullOrWhiteSpace(Genre) ? "" : $" | {Genre}";
+            return $"{Id}: {Title} ({ReleaseYear}) - {Type}{genreDisplay} - Status: {Status} | Rating: {UserRating}/10 ({DateAdded.ToShortDateString()})";
         }
     } // End of class
 }
