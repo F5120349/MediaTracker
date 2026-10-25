@@ -1,4 +1,4 @@
-﻿using FilmTracker.Dtos;
+﻿using MediaTracker.Dtos;
 using MediaTracker.Data;
 using System;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Text.Json;
 
 // --- LAB 1 SETUP: HttpClient for TMDB ---
 // Paste your TMDB API Read Access Token (v4) here
-const string tmdbBearerToken = "YOUR_TMDB_API_READ_ACCESS_TOKEN_HERE";
+const string tmdbBearerToken = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZjViOTgzNzU5MzEwNDY1MDg0MmNlYTZlYjRkYTMxYSIsIm5iZiI6MTc3MjQwOTMxOS4zMjUsInN1YiI6IjY5YTRkMWU3Njg2NzY2OGNmMGE3YTI5ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.E5K6rqWWc45V_ut06z5-BHrsuSbKRdsL6sHt12rsyaU";
 
 var client = new HttpClient
 {

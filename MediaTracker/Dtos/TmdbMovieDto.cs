@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace FilmTracker.Dtos
+namespace MediaTracker.Dtos
 {
     public class TmdbSearchResponse
     {
